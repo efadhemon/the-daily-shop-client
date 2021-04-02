@@ -1,0 +1,132 @@
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.login-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-with-email-pass{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 30px;
+}
+.form-group input {
+    max-width: 100%;
+    flex: 0 0 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9999;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.login-link{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.or-line span {
+    width: 135px;
+    height: 1px;
+    background: black;
+    display: block;
+    margin-top: 13px;
+}
+
+.or-line {
+    display: flex;
+    place-content: center;
+    margin: 30px 0;
+}
+
+.or-line b {
+    margin: 0 10px;
+}
+
+.sign-in-with-social p {
+    border: 1px solid lightgray;
+    width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+}
+
+.sign-in-with-social p .social-icon {
+    text-align: left;
+    margin-top: 3px;
+    font-size: 20px;
+}
+.social-icon.google-icon{
+    color: #4285F4;
+}
+.social-icon.facebook-icon{
+    color: #3b5998;
+}
+.sign-in-with-social p span{
+    width: 90%;
+    text-align: right;
+    font-weight: 500;
+}
+.rememberME-and-forgot-box {
+    display: flex;
+    width: 100%;
+    margin: 10px 0 25px 0;
+}
+
+.remember-me {
+    text-align: left;
+    width: 50%;
+}
+
+.forgot-password {
+    text-align: right;
+    width: 50%;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.forgot-password span {
+    text-decoration: underline;
+    color: #6946F4;
+    cursor: pointer;
+}
+
+input#password {
+    width: 100%;
+}
+
+span.show-password {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+}
+
+input#confirm-password {
+    width: 100%;
+}
+
+@media (max-width: 991px){
+    .login-with-email-pass{
+        width: 95%;
+    }
+    .remember-me label{
+        font-size: 14px;
+    }
+    .forgot-password span{
+        font-size: 14px;
+    }
+}
