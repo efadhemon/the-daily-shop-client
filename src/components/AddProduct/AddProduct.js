@@ -47,22 +47,22 @@ const AddProduct = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="from-box">
                     <div className="add-product-box">
-                        <div className="row">
-                            <label className="col-6 mb-3" htmlFor="product_name">
+                        <div className="row mb-4">
+                            <label className="col-6" htmlFor="product_name">
                                 <h5>Product Name</h5>
                                 <input className="d-block w-100 p-2 form-control" name="product_name" id="product_name" type="text" placeholder="Type here" ref={register({ required: true })} />
                             </label>
-                            <label className="col-6 mb-3" htmlFor="product_wight">
+                            <label className="col-6" htmlFor="product_wight">
                                 <h5>Product Wight</h5>
                                 <input className="d-block w-100 p-2 form-control" name="product_wight" id="product_wight" type="text" placeholder="Type here" ref={register({ required: true })} />
                             </label>
                         </div>
                         <div className="row">
-                            <label className="col-6 mb-3" htmlFor="product_price">
+                            <label className="col-6" htmlFor="product_price">
                                 <h5>Add Price</h5>
                                 <input className="d-block w-100 p-2 form-control" name="product_price" id="product_price" type="text" placeholder="Type here" ref={register({ required: true })} />
                             </label>
-                            <label className="col-6 mb-3" htmlFor="product_imgUrl">
+                            <label className="col-6" htmlFor="product_imgUrl">
                                 <h5>Add Photo</h5>
                                 <input className="d-block w-100 p-2" id="product_imgUrl" type="file" placeholder="Upload Photo" onChange={handleImageUpload} />
                             </label>

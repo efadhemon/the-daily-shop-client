@@ -15,8 +15,9 @@
 }
 
 .products-container .loading-spinner  .spinner-border{
-    height: 8rem !important;
-    width: 8rem !important;
+    height: 5rem !important;
+    width: 5rem !important;
+    color: #4319e9 !important;
 }
 
 

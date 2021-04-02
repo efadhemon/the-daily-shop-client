@@ -31,7 +31,7 @@ const Orders = () => {
                     <h4 className="col-4">Product Name</h4>
                     <h4 className="col-3">Wight</h4>
                     <h4 className="col-2">Price</h4>
-                    <h4 className="col-3 text-right">Ordered Time</h4>
+                    <h4 className="col-3 text-right">Ordered Date</h4>
                 </div>
                 {
                     orderedProducts.map(orderedProduct => <OrdersDetails orderedProduct={orderedProduct} key={orderedProduct._id} ></OrdersDetails>)
@@ -40,7 +40,7 @@ const Orders = () => {
                     <h2>Your Total Cost: $ {totalCost}</h2>
                 </div>
             </div>
-            <div className="text-right">
+            <div className="text-right shop-more-btn-box">
                 <button className="btn my-btn shop-more-btn" onClick={()=> history.replace('/home')}>Shop More</button>
             </div>
         </div>
