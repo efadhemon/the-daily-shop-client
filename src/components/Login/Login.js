@@ -197,7 +197,7 @@ const Login = () => {
                         <p id="fromValidationError">{fromValidationError}</p>
                     }
 
-                    {user.error && newUser &&
+                    {user.error &&
                         <p>{user.error}</p>
                     }
                 </div>
