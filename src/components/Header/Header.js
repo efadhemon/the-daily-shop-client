@@ -75,7 +75,7 @@ const Header = () => {
                 <img src={loggedInUser.photo ? loggedInUser.photo : AvatarFace} alt="" />
                 <h3>{loggedInUser.name}</h3>
                 <p>{loggedInUser.email}</p>
-                <button className="btn my-btn" onClick={signOut}>Sign Out</button>
+                <button className="btn my-btn" onClick={signOut}>Log Out</button>
             </div>
         </div>
     );
