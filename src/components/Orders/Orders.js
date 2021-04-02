@@ -15,13 +15,13 @@ const Orders = () => {
             .then(data => setOrderedProducts(data))
     }, [])
 
-    const totalCost = orderedProducts.reduce((total, prd)=> total+ Number(prd.product_price), 0)
+    const totalCost = orderedProducts.reduce((total, prd) => total + Number(prd.product_price), 0)
 
     return (
         <div className="container  orders mb-5">
             <div className="customer-info text-center">
-                <h2>Hi, {orderedProducts[0]?.customer_name}</h2>
-                <h5>Your email: {orderedProducts[0]?.customer_email}</h5>
+                <h2>Hi, {loggedInUser.name}</h2>
+                <h5>Your email: {loggedInUser.email}</h5>
             </div>
             <div className="text-center">
                 <h2>Your Ordered Product list in the below</h2>
@@ -34,14 +34,23 @@ const Orders = () => {
                     <h4 className="col-3 text-right">Ordered Date</h4>
                 </div>
                 {
+                    orderedProducts.length === 0 &&
+                    <div className="text-center m-5">
+                        <h1>YOU Have NO Orders</h1>
+                    </div>
+                }
+                {
                     orderedProducts.map(orderedProduct => <OrdersDetails orderedProduct={orderedProduct} key={orderedProduct._id} ></OrdersDetails>)
                 }
-                <div className="text-center mt-3">
-                    <h2>Your Total Cost: $ {totalCost}</h2>
-                </div>
+                {   
+                    orderedProducts.length > 0 &&
+                    <div className="text-center mt-3">
+                        <h2>Your Total Cost: $ {totalCost}</h2>
+                    </div>
+                }
             </div>
             <div className="text-right shop-more-btn-box">
-                <button className="btn my-btn shop-more-btn" onClick={()=> history.replace('/home')}>Shop More</button>
+                <button className="btn my-btn shop-more-btn" onClick={() => history.replace('/home')}>Shop More</button>
             </div>
         </div>
     );

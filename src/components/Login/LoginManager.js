@@ -85,7 +85,6 @@ export const createUserWithEmailAndPassword = (name, email, password) => {
             newUserInfo.error = '';
             newUserInfo.success = true;
             updateUserName(name);
-            console.log(res.user);
             return newUserInfo;
 
         })

@@ -13,7 +13,7 @@
 .side-nav {
     max-width: 25%;
     flex: 0 0 25%;
-    background-color: #043d6b;
+    background-color: #1e038b;
     padding: 20px;
 }
 
@@ -27,6 +27,7 @@
     text-decoration: none;
     color: white;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .side-nav .side-nav-link .icon{
     width: 35px;

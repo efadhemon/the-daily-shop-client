@@ -30,7 +30,7 @@ const Admin = () => {
                             <Route path="/admin/manage-product">
                                 <ManageProducts></ManageProducts>
                             </Route>
-                            <Route exact path="/admin">
+                            <Route exact path="/admin/">
                                 <ManageProducts></ManageProducts>
                             </Route>
                             <Route path="/admin/add-product">
